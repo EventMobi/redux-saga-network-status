@@ -1,0 +1,10 @@
+{
+  "parser": "babel-eslint",
+  "extends": "eventmobi",
+  "env": {
+    "jest": true
+  },
+  "rules": {
+    "no-constant-condition": [1, { "checkLoops": false }]
+  }
+}

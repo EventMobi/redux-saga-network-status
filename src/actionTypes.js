@@ -1,0 +1,11 @@
+export const BACKOFF = '@@redux-saga-network-status/BACKOFF';
+export const BACKOFF_COMPLETE = '@@redux-saga-network-status/BACKOFF_COMPLETE';
+export const COUNT_DOWN = '@@redux-saga-network-status/COUNT_DOWN';
+export const NAVIGATOR_OFFLINE = '@@redux-saga-network-status/NAVIGATOR_OFFLINE';
+export const NAVIGATOR_ONLINE = '@@redux-saga-network-status/NAVIGATOR_ONLINE';
+export const PING = '@@redux-saga-network-status/PING';
+export const PING_CANCEL = '@@redux-saga-network-status/PING_CANCEL';
+export const PING_FAILURE = '@@redux-saga-network-status/PING_FAILURE';
+export const PING_PENDING = '@@redux-saga-network-status/PING_PENDING';
+export const PING_SUCCESS = '@@redux-saga-network-status/PING_SUCCESS';
+export const START_WATCH_NETWORK_STATUS = '@@redux-saga-network-status/START_WATCH_NETWORK_STATUS';
