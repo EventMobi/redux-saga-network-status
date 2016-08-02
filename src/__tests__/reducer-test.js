@@ -1,6 +1,3 @@
-jest.unmock('../actionTypes');
-jest.unmock('../reducer');
-
 import {
   BACKOFF,
   COUNT_DOWN,
@@ -11,6 +8,9 @@ import {
   PING_SUCCESS,
 } from '../actionTypes';
 import networkReducer from '../reducer';
+
+jest.unmock('../actionTypes');
+jest.unmock('../reducer');
 
 const DEFAULT_STATE = {
   hasBeenOnline: false,

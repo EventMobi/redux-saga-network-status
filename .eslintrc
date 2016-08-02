@@ -2,6 +2,7 @@
   "parser": "babel-eslint",
   "extends": "eventmobi",
   "env": {
+    "browser": true,
     "jest": true
   },
   "rules": {
