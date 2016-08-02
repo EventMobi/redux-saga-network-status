@@ -170,7 +170,7 @@ export function* watchBackoff() {
  */
 export function getNextFibonacciValue(randomizationFactor, previous, current) {
   const next = previous + current;
-  return next + next * randomizationFactor * Math.random();
+  return next + (next * randomizationFactor * Math.random());
 }
 
 /**
