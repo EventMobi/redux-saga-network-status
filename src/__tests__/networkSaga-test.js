@@ -1,3 +1,7 @@
+jest.unmock('../actions');
+jest.unmock('../actionTypes');
+jest.unmock('../sagas');
+
 import fetch from 'isomorphic-fetch';
 import { delay } from 'redux-saga';
 import {
@@ -47,10 +51,6 @@ import watchNetworkStatus, {
   watchWindowOnline,
   watchWindowOffline,
 } from '../sagas';
-
-jest.unmock('../actions');
-jest.unmock('../actionTypes');
-jest.unmock('../sagas');
 
 describe('watchWindowOffline', () => {
   it('should dispatch NAVIGATOR_OFFLINE whenever the `window` \'offline\' event occurs', () => {
