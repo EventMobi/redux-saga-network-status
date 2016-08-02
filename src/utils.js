@@ -5,7 +5,7 @@
  * @param  {string}       type   The type of event
  * @return {Promise<any>}        Resolves with the event once it's dispatched
  */
-export function once(target, type) { // eslint-disable-line import/prefer-default-export
+export function once(target, type) {
   return new Promise(resolve => {
     const listener = e => {
       target.removeEventListener(type, listener);
