@@ -6,8 +6,8 @@
  * @return {Promise<any>}        Resolves with the event once it's dispatched
  */
 export function once(target, type) {
-  return new Promise(resolve => {
-    const listener = e => {
+  return new Promise((resolve) => {
+    const listener = (e) => {
       target.removeEventListener(type, listener);
       resolve(e);
     };

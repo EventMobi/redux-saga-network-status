@@ -298,7 +298,7 @@ describe('fibonacciPoll', () => {
       // Simulate BACKOFF_COMPLETE:
       const winner = { backoffComplete: { type: BACKOFF_COMPLETE } };
       expect(generator.next(winner).value).toEqual(put(ping('http://example.com/ping')));
-    }
+    },
   );
 
   it(
@@ -323,7 +323,7 @@ describe('fibonacciPoll', () => {
       // Simulate PING:
       const winner = { ping: { type: PING } };
       expect(generator.next(winner).value).toEqual(take([PING_SUCCESS, PING_FAILURE]));
-    }
+    },
   );
 
   it('should delay subsequent ping attempts using increasing fibonacci time intervals', () => {
@@ -406,7 +406,7 @@ describe('watchNetworkStatus', () => {
       }).value).toEqual(fork(watchBackoff));
       expect(generator.next().value).toEqual(fork(watchPing));
       expect(generator.next().value).toEqual(fork(watchNavigatorStatus, window.navigator));
-    }
+    },
   );
 
   it('should begin polling when NAVIGATOR_ONLINE, and stop when NAVIGATOR_OFFLINE', () => {

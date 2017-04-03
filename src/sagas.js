@@ -135,7 +135,7 @@ export function* watchPing() {
 export function* handleBackoff({ payload: ms }) {
   const intervalLength = 1000;  // count down by one second at a time
   const intervalCount = Math.floor(ms / intervalLength);
-  for (const i of range(0, intervalCount)) {  // eslint-disable-line no-unused-vars
+  for (const i of range(0, intervalCount)) {  // eslint-disable-line no-unused-vars,no-restricted-syntax,max-len
     yield put(countDown(intervalLength));
     yield call(delay, intervalLength);
   }

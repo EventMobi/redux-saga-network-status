@@ -64,7 +64,7 @@ describe('network reducer', () => {
       expect(state.hasDetectedNetworkStatus).toBe(true);
       expect(state.isNavigatorOnline).toBe(false);
       expect(state.isOnline).toBe(false);
-    }
+    },
   );
 
   it('sets `isNavigatorOnline = true` upon NAVIGATOR_ONLINE', () => {
@@ -99,7 +99,7 @@ describe('network reducer', () => {
       expect(state.isOnline).toBe(false);
       expect(state.isPinging).toBe(false);
       expect(state.pingError.message).toEqual('uh oh');
-    }
+    },
   );
 
   it(
@@ -113,6 +113,6 @@ describe('network reducer', () => {
       expect(state.hasDetectedNetworkStatus).toBe(true);
       expect(state.isOnline).toBe(true);
       expect(state.isPinging).toBe(false);
-    }
+    },
   );
 });
