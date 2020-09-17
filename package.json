@@ -1,5 +1,5 @@
 {
-  "name": "redux-saga-network-status",
+  "name": "@eventmobi/redux-saga-network-status",
   "version": "0.0.4",
   "description": "Network status detection with server ping and backoff for redux-saga",
   "main": "lib/index.js",
@@ -36,7 +36,7 @@
     "babel-preset-es2015": "6.18.0",
     "babel-preset-stage-2": "6.18.0",
     "eslint": "^3.19.0",
-    "eslint-config-eventmobi": "^0.16.0",
+    "@eventmobi/eslint-config": "^0.16.0",
     "eslint-plugin-import": "^2.2.0",
     "eslint-plugin-jsx-a11y": "^4.0.0",
     "eslint-plugin-react": "^6.10.3",

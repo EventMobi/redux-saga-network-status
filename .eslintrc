@@ -1,6 +1,6 @@
 {
   "parser": "babel-eslint",
-  "extends": "eventmobi",
+  "extends": "@eventmobi/eslint-config",
   "env": {
     "browser": true,
     "jest": true
